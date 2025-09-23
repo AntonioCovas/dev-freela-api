@@ -1,0 +1,59 @@
+# =================================
+# Build Folders
+# =================================
+bin/
+obj/
+out/
+
+# =================================
+# User-specific files
+# =================================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =================================
+# Visual Studio / Rider / JetBrains
+# =================================
+.vs/
+.idea/
+*.Rider
+
+# =================================
+# DotNet / NuGet
+# =================================
+*.dll
+*.exe
+*.pdb
+*.cache
+*.mdb
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# =================================
+# Logs
+# =================================
+*.log
+
+# =================================
+# Configurações sensíveis
+# =================================
+appsettings.Development.json
+appsettings.Secret.json
+secrets.json
+
+# =================================
+# Rider / JetBrains
+# =================================
+.idea/
+
+# =================================
+# Outros arquivos temporários
+# =================================
+*.tmp
+*.temp
+*.bak
+*.swp
