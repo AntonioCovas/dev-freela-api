@@ -12,7 +12,7 @@ namespace DevFreela.Infrastructure.Persistence.Configurations
 {
     internal class ProjectCommentMap : IEntityTypeConfiguration<ProjectComment>
     {
-        public void Configure(EntityTypeBuilder<ProjectComment> builder)
+         public void Configure(EntityTypeBuilder<ProjectComment> builder)
         {
             builder.ToTable(nameof(ProjectComment));
 

@@ -1,3 +1,5 @@
+using DevFreela.API;
+using DevFreela.API.Filters;
 using DevFreela.Application.Commands.CreateComment;
 using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Commands.CreateUser;
@@ -11,9 +13,12 @@ using DevFreela.Application.Queries.GetAllProjects;
 using DevFreela.Application.Queries.GetAllSkills;
 using DevFreela.Application.Queries.GetProjectById;
 using DevFreela.Application.Queries.GetUserById;
+using DevFreela.Application.Validators;
 using DevFreela.Core.Repositories;
 using DevFreela.Infrastructure.Persistence;
 using DevFreela.Infrastructure.Persistence.Repositories;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +28,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DevFreelaDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("DevFreelaCs")));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options => options.Filters.Add(typeof(ValidationFilter)));
+builder.Services.AddFluentValidationAutoValidation()
+    .AddValidatorsFromAssemblyContaining<CreateProjectCommandValidator>();
 
 builder.Services.AddScoped<IProjectRepository, ProjectRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -48,6 +55,8 @@ builder.Services.AddMediatR(typeof(GetAllProjectsQuery));
 builder.Services.AddMediatR(typeof(GetAllSkillsQuery));
 builder.Services.AddMediatR(typeof(GetProjectByIdQuery));
 builder.Services.AddMediatR(typeof(GetUserByIdQuery));
+
+FluentValidationConfig.ConfigureDisplayNames();
 
 var app = builder.Build();
 

@@ -22,11 +22,11 @@ O projeto está sendo desenvolvido com intuito de colocar em prática e fixar co
 - **MediatR** como mediador entre Controllers e Handlers, desacoplando a lógica de envio de comandos e queries da execução
 - **Padrão repository** para abstrair acessos ao banco, centralizando consultas e persistência em classes dedicadas
 - **Abstrações** e **injeção de dependência** para separar responsabilidades, facilitando **testes**, **manutenção** e **evolução do código**
+- Validações com **FluentValidation**
+- **Filter** para interceptar pipeline de execução, centralizar e padronizar retorno de erros, possibilitando limpar controllers
 
 ### 🔜 Próximos passos
 
-- Implementação de endpoints restantes
-- Implementação de validações
 - Autenticação e autorização com JWT
 - Testes unitários com xUnit
 
