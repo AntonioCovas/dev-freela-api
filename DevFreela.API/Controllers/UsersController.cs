@@ -20,7 +20,6 @@ namespace DevFreela.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            if (id == 0) return BadRequest();
             var request = new GetUserByIdQuery(id);
             var userViewModel = await _mediator.Send(request);
             return Ok(userViewModel);
@@ -36,7 +35,6 @@ namespace DevFreela.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] UpdateUserCommand command)
         {
-            if (command == null) return BadRequest();
             await _mediator.Send(command);
             return NoContent();
         }
@@ -44,7 +42,6 @@ namespace DevFreela.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            if (id == 0) return BadRequest();
             var request = new DeleteUserCommand(id);
             await _mediator.Send(request);
             return NoContent();
