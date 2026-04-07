@@ -1,6 +1,6 @@
 ﻿using Dapper;
 using DevFreela.Application.ViewModels;
-using DevFreela.Core.Repositories;
+using DevFreela.Core.Interfaces;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.Data.SqlClient;

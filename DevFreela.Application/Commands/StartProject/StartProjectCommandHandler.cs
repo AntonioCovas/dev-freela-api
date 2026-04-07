@@ -1,6 +1,6 @@
 ﻿using Azure.Core;
 using Dapper;
-using DevFreela.Core.Repositories;
+using DevFreela.Core.Interfaces;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.Data.SqlClient;

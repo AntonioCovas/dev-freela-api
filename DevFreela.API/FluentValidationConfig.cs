@@ -17,20 +17,16 @@ namespace DevFreela.API
                 if (member == null) return null;
 
                 var displayNames = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
-            {
-                { nameof(CreateCommentCommand.Content), "Conteúdo" },
-                { nameof(CreateProjectCommand.Title), "Título" },
-                { nameof(CreateProjectCommand.Description), "Descrição" },
-                { nameof(CreateProjectCommand.TotalCost), "Custo total" },
-                { nameof(CreateUserCommand.FullName), "Nome completo" },
-                { nameof(CreateUserCommand.Email), "E-mail" },
-                { nameof(CreateUserCommand.Password), "Senha" },
-                { nameof(CreateUserCommand.BirthDate), "Data de aniversário" },
-                { nameof(UpdateProjectCommand.Title), "Título" },
-                { nameof(UpdateProjectCommand.Description), "Descrição" },
-                { nameof(UpdateUserCommand.FullName), "Nome completo" },
-                { nameof(UpdateUserCommand.BirthDate), "Data de aniversário" },
-            };
+                {
+                    { nameof(CreateCommentCommand.Content), "Conteúdo" },
+                    { nameof(CreateProjectCommand.Title), "Título" },
+                    { nameof(CreateProjectCommand.Description), "Descrição" },
+                    { nameof(CreateProjectCommand.TotalCost), "Custo total" },
+                    { nameof(CreateUserCommand.FullName), "Nome completo" },
+                    { nameof(CreateUserCommand.Email), "E-mail" },
+                    { nameof(CreateUserCommand.Password), "Senha" },
+                    { nameof(CreateUserCommand.BirthDate), "Data de aniversário" },
+                };
 
                 return displayNames.TryGetValue(member.Name, out var friendlyName)
                     ? friendlyName
@@ -38,5 +34,4 @@ namespace DevFreela.API
             };
         }
     }
-
 }

@@ -1,4 +1,4 @@
-﻿using DevFreela.Core.Repositories;
+﻿using DevFreela.Core.Interfaces;
 using MediatR;
 using System;
 using System.Collections.Generic;

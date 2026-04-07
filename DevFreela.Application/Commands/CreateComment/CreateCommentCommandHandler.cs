@@ -1,5 +1,5 @@
 ﻿using DevFreela.Core.Entities;
-using DevFreela.Core.Repositories;
+using DevFreela.Core.Interfaces;
 using DevFreela.Infrastructure.Persistence;
 using MediatR;
 using System;

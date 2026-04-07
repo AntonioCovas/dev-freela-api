@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Core.Repositories
+namespace DevFreela.Core.Interfaces
 {
     public interface IProjectRepository
     {

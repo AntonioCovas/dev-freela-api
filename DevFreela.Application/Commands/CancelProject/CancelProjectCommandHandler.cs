@@ -1,4 +1,4 @@
-﻿using DevFreela.Core.Repositories;
+﻿using DevFreela.Core.Interfaces;
 using DevFreela.Infrastructure.Persistence;
 using DevFreela.Infrastructure.Persistence.Repositories;
 using MediatR;

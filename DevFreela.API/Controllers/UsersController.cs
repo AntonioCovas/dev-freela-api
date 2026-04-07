@@ -1,13 +1,16 @@
 ﻿using DevFreela.Application.Commands.CreateUser;
 using DevFreela.Application.Commands.DeleteUser;
 using DevFreela.Application.Commands.UpdateUser;
+using DevFreela.Application.Commands.UserLogin;
 using DevFreela.Application.Queries.GetUserById;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevFreela.API.Controllers
 {
     [Route("api/users")]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -26,6 +29,7 @@ namespace DevFreela.API.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Post([FromBody] CreateUserCommand command)
         {
             var newUserId = await _mediator.Send(command);
@@ -45,6 +49,15 @@ namespace DevFreela.API.Controllers
             var request = new DeleteUserCommand(id);
             await _mediator.Send(request);
             return NoContent();
+        }
+
+        [HttpPut("login")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login([FromBody] UserLoginCommand command)
+        {
+            var userLoginviewModel = await _mediator.Send(command);
+            if (userLoginviewModel == null) return BadRequest();
+            return Ok(userLoginviewModel);
         }
     }
 }

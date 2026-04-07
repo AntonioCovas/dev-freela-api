@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFreela.Core.Repositories
+namespace DevFreela.Core.Interfaces
 {
     public interface IUserRepository
     {
@@ -13,5 +13,6 @@ namespace DevFreela.Core.Repositories
         Task<int> AddAsync(User user);
         Task DeleteAsync(User user);
         Task SaveChangesAsync();
+        Task<User> GetUserByEmailAsync(string email, string password);
     }
 }
