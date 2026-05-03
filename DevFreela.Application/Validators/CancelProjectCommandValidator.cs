@@ -1,4 +1,4 @@
-﻿using DevFreela.Application.Commands.DeleteProject;
+﻿using DevFreela.Application.Commands.Project.CancelProject;
 using FluentValidation;
 using System;
 using System.Collections.Generic;

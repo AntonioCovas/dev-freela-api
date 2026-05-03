@@ -1,6 +1,6 @@
-﻿using DevFreela.Application.Commands.CreateUser;
-using DevFreela.Application.Commands.DeleteUser;
+﻿using DevFreela.Application.Commands.DeleteUser;
 using DevFreela.Application.Commands.UpdateUser;
+using DevFreela.Application.Commands.User.CreateUser;
 using DevFreela.Application.Commands.UserLogin;
 using DevFreela.Application.Queries.GetUserById;
 using MediatR;

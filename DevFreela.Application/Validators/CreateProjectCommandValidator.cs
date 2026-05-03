@@ -1,5 +1,5 @@
-﻿using DevFreela.Application.Commands.CreateProject;
-using DevFreela.Application.Commands.CreateUser;
+﻿using DevFreela.Application.Commands.CreateUser;
+using DevFreela.Application.Commands.Project.CreateProject;
 using FluentValidation;
 using System;
 using System.Collections.Generic;

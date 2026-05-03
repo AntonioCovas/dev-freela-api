@@ -1,7 +1,7 @@
 ﻿using DevFreela.Application.Commands.CreateComment;
-using DevFreela.Application.Commands.CreateProject;
 using DevFreela.Application.Commands.DeleteProject;
 using DevFreela.Application.Commands.FinishProject;
+using DevFreela.Application.Commands.Project.CreateProject;
 using DevFreela.Application.Commands.StartProject;
 using DevFreela.Application.Commands.UpdateProject;
 using DevFreela.Application.Queries.GetAllProjects;
