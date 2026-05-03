@@ -1,15 +1,15 @@
-﻿using DevFreela.Application.Commands.CreateComment;
-using DevFreela.Application.Commands.DeleteProject;
-using DevFreela.Application.Commands.FinishProject;
+﻿using DevFreela.Application.Commands.Project.CancelProject;
+using DevFreela.Application.Commands.Project.CreateComment;
 using DevFreela.Application.Commands.Project.CreateProject;
-using DevFreela.Application.Commands.StartProject;
-using DevFreela.Application.Commands.UpdateProject;
-using DevFreela.Application.Queries.GetAllProjects;
-using DevFreela.Application.Queries.GetProjectById;
+using DevFreela.Application.Commands.Project.DeleteProject;
+using DevFreela.Application.Commands.Project.FinishProject;
+using DevFreela.Application.Commands.Project.StartProject;
+using DevFreela.Application.Commands.Project.UpdateProject;
+using DevFreela.Application.Queries.Project.GetAllProjects;
+using DevFreela.Application.Queries.Project.GetProjectById;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 
 namespace DevFreela.API.Controllers
 {

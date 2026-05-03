@@ -1,11 +1,5 @@
-﻿using DevFreela.Application.Commands.CreateUser;
-using DevFreela.Application.Commands.Project.CreateProject;
+﻿using DevFreela.Application.Commands.Project.CreateProject;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DevFreela.Application.Validators
 {

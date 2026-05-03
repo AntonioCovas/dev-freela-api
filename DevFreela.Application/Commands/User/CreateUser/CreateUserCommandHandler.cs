@@ -1,14 +1,5 @@
-﻿using DevFreela.Core.Entities;
-using DevFreela.Core.Interfaces;
-using DevFreela.Core.Interfaces;
-using DevFreela.Infrastructure.Persistence;
+﻿using DevFreela.Core.Interfaces;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DevFreela.Application.Commands.User.CreateUser
 {
@@ -27,7 +18,7 @@ namespace DevFreela.Application.Commands.User.CreateUser
         public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
             request.Password = _authService.HashPassword(request.Password);
-            var newUser = new User(request.FullName, request.Email, request.BirthDate, request.Password, request.Role);
+            var newUser = new Core.Entities.User(request.FullName, request.Email, request.BirthDate, request.Password, request.Role);
             var newUserId = await _userRepository.AddAsync(newUser);
             return newUserId;
         }

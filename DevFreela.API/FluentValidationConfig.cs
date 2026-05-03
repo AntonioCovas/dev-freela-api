@@ -1,8 +1,6 @@
 ﻿using DevFreela.Application.Commands;
 using DevFreela.Application.Commands.Project.CreateComment;
 using DevFreela.Application.Commands.Project.CreateProject;
-using DevFreela.Application.Commands.UpdateProject;
-using DevFreela.Application.Commands.UpdateUser;
 using DevFreela.Application.Commands.User.CreateUser;
 using FluentValidation;
 
