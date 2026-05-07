@@ -24,6 +24,7 @@ namespace DevFreela.API.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "client, freelancer")]
         public async Task<IActionResult> Get(string query)
         {
             var projects = await _mediator.Send(new GetAllProjectsQuery(query));
