@@ -1,4 +1,4 @@
-﻿using DevFreela.Application.Commands.FinishProject;
+﻿using DevFreela.Application.Commands.Project.FinishProject;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
