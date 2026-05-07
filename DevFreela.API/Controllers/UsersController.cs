@@ -1,8 +1,8 @@
-﻿using DevFreela.Application.Commands.CreateUser;
-using DevFreela.Application.Commands.DeleteUser;
-using DevFreela.Application.Commands.UpdateUser;
-using DevFreela.Application.Commands.UserLogin;
-using DevFreela.Application.Queries.GetUserById;
+﻿using DevFreela.Application.Commands.User.CreateUser;
+using DevFreela.Application.Commands.User.DeleteUser;
+using DevFreela.Application.Commands.User.UpdateUser;
+using DevFreela.Application.Commands.User.UserLogin;
+using DevFreela.Application.Queries.User.GetUserById;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

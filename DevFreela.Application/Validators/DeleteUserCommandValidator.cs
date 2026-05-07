@@ -1,4 +1,4 @@
-﻿using DevFreela.Application.Commands.DeleteUser;
+﻿using DevFreela.Application.Commands.User.DeleteUser;
 using FluentValidation;
 
 namespace DevFreela.Application.Validators

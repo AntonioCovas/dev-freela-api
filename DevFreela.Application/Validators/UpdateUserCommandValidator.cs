@@ -1,4 +1,4 @@
-﻿using DevFreela.Application.Commands.UpdateUser;
+﻿using DevFreela.Application.Commands.User.UpdateUser;
 using FluentValidation;
 using System;
 using System.Collections.Generic;

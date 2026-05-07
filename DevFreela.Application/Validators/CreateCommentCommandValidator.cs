@@ -1,4 +1,4 @@
-﻿using DevFreela.Application.Commands.CreateComment;
+﻿using DevFreela.Application.Commands.Project.CreateComment;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
