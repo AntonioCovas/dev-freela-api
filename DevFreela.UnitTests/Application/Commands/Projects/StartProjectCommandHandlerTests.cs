@@ -1,4 +1,4 @@
-using DevFreela.Application.Commands.StartProject;
+using DevFreela.Application.Commands.Project.StartProject;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Enums;
 using DevFreela.Core.Interfaces;

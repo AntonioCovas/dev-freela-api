@@ -1,10 +1,7 @@
-﻿using DevFreela.Application.Queries.GetAllProjects;
+﻿using DevFreela.Application.Queries.Project.GetAllProjects;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DevFreela.UnitTests.Application.Queries
 {

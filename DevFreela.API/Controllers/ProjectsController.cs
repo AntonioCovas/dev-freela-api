@@ -98,7 +98,12 @@ namespace DevFreela.API.Controllers
         public async Task<IActionResult> Finish(int id)
         {
             var command = new FinishProjectCommand(id);
-            await _mediator.Send(command);
+            var result = await _mediator.Send(command);
+            if (!result)
+            {
+                return BadRequest("O pagamento não pôde ser processado.");
+            }
+
             return NoContent();
         }
     }

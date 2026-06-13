@@ -1,4 +1,4 @@
-using DevFreela.Application.Queries.GetAllProjects;
+using DevFreela.Application.Queries.Project.GetAllProjects;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;

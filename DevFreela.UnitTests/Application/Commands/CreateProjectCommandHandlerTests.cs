@@ -1,5 +1,4 @@
-﻿using DevFreela.Application.Commands.CreateProject;
-using DevFreela.Application.Commands.DeleteProject;
+﻿using DevFreela.Application.Commands.Project.CreateProject;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;

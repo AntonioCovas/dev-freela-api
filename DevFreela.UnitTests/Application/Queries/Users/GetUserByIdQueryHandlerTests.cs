@@ -1,4 +1,4 @@
-using DevFreela.Application.Queries.GetUserById;
+using DevFreela.Application.Queries.User.GetUserById;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;

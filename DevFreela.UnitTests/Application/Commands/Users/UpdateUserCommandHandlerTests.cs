@@ -1,4 +1,4 @@
-using DevFreela.Application.Commands.UpdateUser;
+using DevFreela.Application.Commands.User.UpdateUser;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;

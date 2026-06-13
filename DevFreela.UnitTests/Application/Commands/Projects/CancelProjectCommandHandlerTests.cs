@@ -1,4 +1,4 @@
-using DevFreela.Application.Commands.DeleteProject;
+using DevFreela.Application.Commands.Project.CancelProject;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Enums;
 using DevFreela.Core.Interfaces;

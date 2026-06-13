@@ -1,4 +1,4 @@
-using DevFreela.Application.Commands.UserLogin;
+using DevFreela.Application.Commands.User.UserLogin;
 using DevFreela.Application.ViewModels;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;

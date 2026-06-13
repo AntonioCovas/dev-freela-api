@@ -1,4 +1,3 @@
-using DevFreela.Application.Commands.DeleteUser;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;

@@ -1,4 +1,4 @@
-using DevFreela.Application.Commands.CreateUser;
+using DevFreela.Application.Commands.User.CreateUser;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;

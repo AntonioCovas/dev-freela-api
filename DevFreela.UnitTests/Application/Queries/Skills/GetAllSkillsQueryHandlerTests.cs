@@ -1,4 +1,4 @@
-using DevFreela.Application.Queries.GetAllSkills;
+using DevFreela.Application.Queries.Skill.GetAllSkills;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;

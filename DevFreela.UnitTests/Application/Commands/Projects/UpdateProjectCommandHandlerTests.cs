@@ -1,4 +1,4 @@
-using DevFreela.Application.Commands.UpdateProject;
+using DevFreela.Application.Commands.Project.UpdateProject;
 using DevFreela.Core.Entities;
 using DevFreela.Core.Interfaces;
 using Moq;
